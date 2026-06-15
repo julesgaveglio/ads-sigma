@@ -22,12 +22,12 @@
       "static/chunks/main-app-7f2dae802c243d21.js",
       "static/chunks/app/login/page-476000e1bd86fc71.js"
     ],
-    "/(dashboard)/leads/page": [
+    "/(dashboard)/vsl/transcript/page": [
       "static/chunks/webpack-01935f634840112b.js",
       "static/chunks/fd9d1056-43f4da8c87820555.js",
       "static/chunks/117-d942e4ffd9d3619f.js",
       "static/chunks/main-app-7f2dae802c243d21.js",
-      "static/chunks/app/(dashboard)/leads/page-7ca64ec443a15bb7.js"
+      "static/chunks/app/(dashboard)/vsl/transcript/page-83689a172bd088e7.js"
     ],
     "/(dashboard)/layout": [
       "static/chunks/webpack-01935f634840112b.js",
@@ -44,19 +44,20 @@
       "static/chunks/717-37045d8fdc725ebc.js",
       "static/chunks/app/(dashboard)/page-1faae6e675583f4b.js"
     ],
+    "/(dashboard)/vsl/page": [
+      "static/chunks/webpack-01935f634840112b.js",
+      "static/chunks/fd9d1056-43f4da8c87820555.js",
+      "static/chunks/117-d942e4ffd9d3619f.js",
+      "static/chunks/main-app-7f2dae802c243d21.js",
+      "static/chunks/717-37045d8fdc725ebc.js",
+      "static/chunks/app/(dashboard)/vsl/page-a3cda2e776871c26.js"
+    ],
     "/(dashboard)/optin/page": [
       "static/chunks/webpack-01935f634840112b.js",
       "static/chunks/fd9d1056-43f4da8c87820555.js",
       "static/chunks/117-d942e4ffd9d3619f.js",
       "static/chunks/main-app-7f2dae802c243d21.js",
       "static/chunks/app/(dashboard)/optin/page-cf26c1672ce6d40f.js"
-    ],
-    "/(dashboard)/vsl/transcript/page": [
-      "static/chunks/webpack-01935f634840112b.js",
-      "static/chunks/fd9d1056-43f4da8c87820555.js",
-      "static/chunks/117-d942e4ffd9d3619f.js",
-      "static/chunks/main-app-7f2dae802c243d21.js",
-      "static/chunks/app/(dashboard)/vsl/transcript/page-83689a172bd088e7.js"
     ],
     "/(dashboard)/emails/page": [
       "static/chunks/webpack-01935f634840112b.js",
@@ -65,13 +66,12 @@
       "static/chunks/main-app-7f2dae802c243d21.js",
       "static/chunks/app/(dashboard)/emails/page-c16736f6c8ab05a3.js"
     ],
-    "/(dashboard)/vsl/page": [
+    "/(dashboard)/leads/page": [
       "static/chunks/webpack-01935f634840112b.js",
       "static/chunks/fd9d1056-43f4da8c87820555.js",
       "static/chunks/117-d942e4ffd9d3619f.js",
       "static/chunks/main-app-7f2dae802c243d21.js",
-      "static/chunks/717-37045d8fdc725ebc.js",
-      "static/chunks/app/(dashboard)/vsl/page-a3cda2e776871c26.js"
+      "static/chunks/app/(dashboard)/leads/page-7ca64ec443a15bb7.js"
     ],
     "/(tunnel)/inscription/page": [
       "static/chunks/webpack-01935f634840112b.js",
