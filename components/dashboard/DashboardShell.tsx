@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { CampaignProvider } from '@/contexts/CampaignContext'
 import NavMenu from './NavMenu'
+import { IconMenu } from '@/components/icons'
 
 interface DashboardShellProps {
   userEmail: string
@@ -31,13 +32,11 @@ export default function DashboardShell({ userEmail, children }: DashboardShellPr
             />
             <button
               onClick={() => setMenuOpen(true)}
-              className="flex flex-col items-center justify-center gap-1.5 w-9 h-9 transition-colors"
-              style={{ borderRadius: '2px' }}
+              className="flex items-center justify-center w-9 h-9 transition-colors"
+              style={{ borderRadius: '2px', color: '#C9A84C' }}
               aria-label="Ouvrir le menu"
             >
-              <span className="block w-5" style={{ height: '1.5px', backgroundColor: '#C9A84C' }} />
-              <span className="block w-5" style={{ height: '1.5px', backgroundColor: '#C9A84C' }} />
-              <span className="block w-3.5 self-end" style={{ height: '1.5px', backgroundColor: '#C9A84C' }} />
+              <IconMenu size={22} />
             </button>
           </div>
         </header>

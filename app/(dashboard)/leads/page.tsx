@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { WATCH_TIME_COLORS } from '@/lib/constants'
 import { formatDate, formatSeconds } from '@/lib/utils'
+import { IconSearch, IconTrash } from '@/components/icons'
 import type { LeadEnriched } from '@/types'
 
 interface LeadsResponse {
@@ -109,9 +110,9 @@ export default function LeadsPage() {
       <div className="relative">
         <span
           className="absolute left-3 top-1/2 -translate-y-1/2"
-          style={{ color: '#4A4642', fontSize: '13px' }}
+          style={{ color: '#4A4642' }}
         >
-          &#x1F50D;
+          <IconSearch size={16} />
         </span>
         <input
           type="text"
@@ -246,13 +247,13 @@ export default function LeadsPage() {
                         ) : (
                           <button
                             onClick={() => setConfirmDelete(lead.id)}
-                            className="transition-colors"
-                            style={{ color: '#4A4642', fontSize: '11px', background: 'none', border: 'none', cursor: 'pointer' }}
+                            className="transition-colors flex items-center justify-center"
+                            style={{ color: '#4A4642', background: 'none', border: 'none', cursor: 'pointer' }}
                             onMouseEnter={(e) => (e.currentTarget.style.color = '#ef4444')}
                             onMouseLeave={(e) => (e.currentTarget.style.color = '#4A4642')}
                             title="Supprimer"
                           >
-                            &#x2715;
+                            <IconTrash size={14} />
                           </button>
                         )}
                       </td>

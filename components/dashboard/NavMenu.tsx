@@ -2,6 +2,7 @@
 
 import { useRouter, usePathname } from 'next/navigation'
 import { useCampaignContext } from '@/contexts/CampaignContext'
+import { IconDashboard, IconOptIn, IconPlay, IconTranscript, IconLeads, IconEmail, IconClose, IconLogout } from '@/components/icons'
 
 interface NavMenuProps {
   isOpen: boolean
@@ -10,12 +11,12 @@ interface NavMenuProps {
 }
 
 const NAV_LINKS = [
-  { href: '/', label: 'Dashboard', icon: '\u2302' },
-  { href: '/optin', label: 'Opt-in', icon: '\u2709' },
-  { href: '/vsl', label: 'VSL', icon: '\u25B6' },
-  { href: '/vsl/transcript', label: 'Transcript', icon: '\u2263' },
-  { href: '/leads', label: 'Leads', icon: '\u263A' },
-  { href: '/emails', label: 'Emails', icon: '\u2709' },
+  { href: '/', label: 'Dashboard', icon: <IconDashboard size={18} /> },
+  { href: '/optin', label: 'Opt-in', icon: <IconOptIn size={18} /> },
+  { href: '/vsl', label: 'VSL', icon: <IconPlay size={18} /> },
+  { href: '/vsl/transcript', label: 'Transcript', icon: <IconTranscript size={18} /> },
+  { href: '/leads', label: 'Leads', icon: <IconLeads size={18} /> },
+  { href: '/emails', label: 'Emails', icon: <IconEmail size={18} /> },
 ]
 
 export default function NavMenu({ isOpen, onClose, userEmail }: NavMenuProps) {
@@ -61,12 +62,12 @@ export default function NavMenu({ isOpen, onClose, userEmail }: NavMenuProps) {
             />
             <button
               onClick={onClose}
-              className="transition-colors text-xl leading-none"
-              style={{ color: '#8A8580' }}
+              className="transition-colors flex items-center justify-center w-8 h-8"
+              style={{ color: '#8A8580', borderRadius: '2px' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = '#F0EDE6')}
               onMouseLeave={(e) => (e.currentTarget.style.color = '#8A8580')}
             >
-              &#x2715;
+              <IconClose size={18} />
             </button>
           </div>
           <p className="truncate" style={{ fontSize: '12px', color: '#8A8580' }}>{userEmail}</p>
@@ -176,7 +177,7 @@ export default function NavMenu({ isOpen, onClose, userEmail }: NavMenuProps) {
                   }
                 }}
               >
-                <span className="text-base w-5 text-center">{link.icon}</span>
+                <span className="w-5 flex items-center justify-center">{link.icon}</span>
                 {link.label}
               </button>
             )
@@ -200,7 +201,7 @@ export default function NavMenu({ isOpen, onClose, userEmail }: NavMenuProps) {
             onMouseEnter={(e) => (e.currentTarget.style.color = '#C9A84C')}
             onMouseLeave={(e) => (e.currentTarget.style.color = '#8A8580')}
           >
-            <span>&#x2190;</span>
+            <IconLogout size={16} />
             Deconnexion
           </button>
         </div>

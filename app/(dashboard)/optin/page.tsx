@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useCampaignContext } from '@/contexts/CampaignContext'
 import KPICard from '@/components/dashboard/KPICard'
+import { IconEye, IconCheck, IconPercent } from '@/components/icons'
 import type { OptinMetrics } from '@/types'
 
 export default function OptinPage() {
@@ -79,21 +80,21 @@ export default function OptinPage() {
           value={metrics.views.toLocaleString('fr-FR')}
           color="#8A8580"
           subtitle="Sessions uniques"
-          icon={<span className="text-sm">&#x1F441;</span>}
+          icon={<IconEye />}
         />
         <KPICard
           title="Opt-ins totaux"
           value={metrics.optins.toLocaleString('fr-FR')}
           color="#C9A84C"
           subtitle="Emails uniques"
-          icon={<span className="text-sm">&#x2714;</span>}
+          icon={<IconCheck />}
         />
         <KPICard
           title="Taux de conversion"
           value={`${metrics.rate}%`}
           color="#4A7A5A"
           subtitle="Opt-in / Vues"
-          icon={<span className="text-sm">%</span>}
+          icon={<IconPercent />}
         />
       </div>
 

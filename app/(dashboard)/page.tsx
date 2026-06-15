@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useCampaignContext } from '@/contexts/CampaignContext'
 import KPICard from '@/components/dashboard/KPICard'
+import { IconEye, IconCheck, IconPercent, IconCalendar } from '@/components/icons'
 import {
   AreaChart,
   Area,
@@ -121,14 +122,14 @@ export default function AdsDashboard() {
           value={funnel.page_view?.toLocaleString('fr-FR') ?? 0}
           color="#8A8580"
           subtitle="30 derniers jours"
-          icon={<span className="text-sm">&#x1F441;</span>}
+          icon={<IconEye />}
         />
         <KPICard
           title="Opt-ins"
           value={funnel.optin?.toLocaleString('fr-FR') ?? 0}
           color="#C9A84C"
           subtitle="30 derniers jours"
-          icon={<span className="text-sm">&#x2714;</span>}
+          icon={<IconCheck />}
         />
         <KPICard
           title="Taux de conversion"
@@ -138,14 +139,14 @@ export default function AdsDashboard() {
               : '0%'
           }
           color="#4A7A5A"
-          icon={<span className="text-sm">%</span>}
+          icon={<IconPercent />}
         />
         <KPICard
           title="RDV confirmes"
           value={funnel.booking_confirmed?.toLocaleString('fr-FR') ?? 0}
           color="#C9A84C"
           subtitle="30 derniers jours"
-          icon={<span className="text-sm">&#x1F4C5;</span>}
+          icon={<IconCalendar />}
         />
       </div>
 
