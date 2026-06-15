@@ -58,19 +58,11 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         {/* Logo + subtitle */}
         <div className="text-center mb-8 flex flex-col items-center">
-          <h1
-            className="tracking-widest uppercase"
-            style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: '24px',
-              fontWeight: 700,
-              letterSpacing: '0.16em',
-              lineHeight: 1.2,
-            }}
-          >
-            <span style={{ color: '#F0EDE6' }}>SIGMA</span>{' '}
-            <span style={{ color: '#C9A84C' }}>FACTORY</span>
-          </h1>
+          <img
+            src="/logo-sigma.png"
+            alt="Sigma Factory"
+            style={{ height: '64px', width: 'auto', marginBottom: '16px' }}
+          />
           <div className="gold-rule my-4" />
           <p className="label-upper">Espace Analytics</p>
         </div>

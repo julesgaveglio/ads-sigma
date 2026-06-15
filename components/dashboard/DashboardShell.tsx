@@ -24,19 +24,11 @@ export default function DashboardShell({ userEmail, children }: DashboardShellPr
           }}
         >
           <div className="mx-auto flex items-center justify-between px-4 sm:px-6 h-14" style={{ maxWidth: '1200px' }}>
-            <h1
-              style={{
-                fontFamily: "'Cormorant Garamond', Georgia, serif",
-                fontSize: '18px',
-                fontWeight: 700,
-                letterSpacing: '0.16em',
-                textTransform: 'uppercase',
-                lineHeight: 1,
-              }}
-            >
-              <span style={{ color: '#F0EDE6' }}>SIGMA</span>{' '}
-              <span style={{ color: '#C9A84C' }}>FACTORY</span>
-            </h1>
+            <img
+              src="/logo-sigma.png"
+              alt="Sigma Factory"
+              style={{ height: '36px', width: 'auto' }}
+            />
             <button
               onClick={() => setMenuOpen(true)}
               className="flex flex-col items-center justify-center gap-1.5 w-9 h-9 transition-colors"

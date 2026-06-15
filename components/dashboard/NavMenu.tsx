@@ -54,17 +54,11 @@ export default function NavMenu({ isOpen, onClose, userEmail }: NavMenuProps) {
         {/* Header */}
         <div className="p-5" style={{ borderBottom: '1px solid #1E1E1E' }}>
           <div className="flex items-center justify-between mb-4">
-            <span
-              style={{
-                fontFamily: "'Cormorant Garamond', Georgia, serif",
-                fontSize: '20px',
-                fontWeight: 600,
-                color: '#C9A84C',
-                letterSpacing: '0.04em',
-              }}
-            >
-              Menu
-            </span>
+            <img
+              src="/logo-sigma.png"
+              alt="Sigma Factory"
+              style={{ height: '28px', width: 'auto' }}
+            />
             <button
               onClick={onClose}
               className="transition-colors text-xl leading-none"
