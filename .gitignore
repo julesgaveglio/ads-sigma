@@ -1,5 +1,8 @@
 node_modules/
 .next/
+!.next/standalone/
+!.next/standalone/**
+.next/standalone/node_modules/
 out/
 .env.local
 .env*.local

@@ -1,0 +1,22 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/route": "app/api/auth/route.js",
+  "/api/funnel/route": "app/api/funnel/route.js",
+  "/api/campaigns/route": "app/api/campaigns/route.js",
+  "/api/funnel/track/route": "app/api/funnel/track/route.js",
+  "/api/emails/route": "app/api/emails/route.js",
+  "/api/optin/route": "app/api/optin/route.js",
+  "/api/optin/track/route": "app/api/optin/track/route.js",
+  "/api/vsl/transcript/route": "app/api/vsl/transcript/route.js",
+  "/api/leads/route": "app/api/leads/route.js",
+  "/login/page": "app/login/page.js",
+  "/api/vsl/route": "app/api/vsl/route.js",
+  "/(dashboard)/leads/page": "app/(dashboard)/leads/page.js",
+  "/(dashboard)/vsl/page": "app/(dashboard)/vsl/page.js",
+  "/(dashboard)/emails/page": "app/(dashboard)/emails/page.js",
+  "/(dashboard)/optin/page": "app/(dashboard)/optin/page.js",
+  "/(dashboard)/vsl/transcript/page": "app/(dashboard)/vsl/transcript/page.js",
+  "/(dashboard)/page": "app/(dashboard)/page.js",
+  "/(tunnel)/inscription/page": "app/(tunnel)/inscription/page.js",
+  "/(tunnel)/presentation/page": "app/(tunnel)/presentation/page.js"
+}
